@@ -4,6 +4,11 @@ import './App.css'
 import Counter from "../Counter/Counter";
 import Header from '../Header/Header';
 
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import TodoApp from '../Todo/TodoApp'
+import todoReducer from '../../reducers/todoApp';
+
 class App extends Component {
 
   constructor() {
@@ -37,10 +42,17 @@ class App extends Component {
   }
 
   renderContent = () => {
+    const todoStore = createStore(todoReducer);
+
     return (
       <Switch>
         <Route path='/' exact render = { () =>
           <Counter/>
+        }/>
+        <Route path={'/todos'} exact render = { () =>
+          <Provider store={todoStore}>
+            <TodoApp/>
+          </Provider>
         }/>
         <Route path='/lambda' exact render = { () =>
           <div>
