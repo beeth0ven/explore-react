@@ -1,4 +1,8 @@
-import { Observable } from 'rx';
+import LoginService from '../../service/loginservice';
+import LambdaService from '../../service/lambdaservice';
+
+const loginService = new LoginService();
+const lambdaService = new LambdaService();
 
 export const CHANGE_EMAIL = 'CHANGE_EMAIL';
 export const CHANGE_PASSWORD = 'CHANGE_PASSWORD';
@@ -32,37 +36,27 @@ export const loginSuccess = () => {
   }
 };
 
-export const loginError = () => {
+export const loginError = (error) => {
   return {
-    type: LOGIN_FAILED
+    type: LOGIN_FAILED,
+    error
   }
 };
 
-// const login = (email, password) => (dispatch) => {
-//   dispatch(startLogin());
-//   Observable.just(1)
-//     .delay(2000)
-//     .subscribe(
-//       data => dispatch(loginSuccess()),
-//       error => dispatch(loginError())
-//     )
-// };
-//
-// const shouldLogin = (state) => !state.isLogining;
-//
-// export const loginIfNeeded = (email, password) => (dispatch, getState) => {
-//     if (shouldLogin(getState())) {
-//       dispatch(login(email, password))
-//     }
-// };
+const login = (email, password) => (dispatch) => {
+  dispatch(startLogin());
+  return loginService.login(email, password)
+    .flatMapLatest(lambdaService.updateSSIP)
+    .subscribe(
+      token => dispatch(loginSuccess()),
+      error => dispatch(loginError(error))
+    )
+};
 
+const shouldLogin = (state) => !state.isLogining;
 
 export const loginIfNeeded = (email, password) => (dispatch, getState) => {
-  dispatch(startLogin());
-  return Observable.just(1)
-    .delay(2000)
-    .subscribe(
-      data => dispatch(loginSuccess()),
-      error => dispatch(loginError())
-    )
+    if (shouldLogin(getState())) {
+      dispatch(login(email, password))
+    }
 };

@@ -10,7 +10,8 @@ const lambdaReducer = (state = {
   email: "",
   password: "",
   isLogining: false,
-  isLogin: false
+  isLogin: false,
+  loginError: undefined
 }, action) => {
   switch (action.type) {
     case CHANGE_EMAIL:
@@ -29,7 +30,8 @@ const lambdaReducer = (state = {
       return {
         ...state,
         isLogining: false,
-        isLogin: false
+        isLogin: false,
+        loginError: action.error
       };
     default:
       return state;
