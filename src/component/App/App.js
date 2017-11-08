@@ -4,10 +4,16 @@ import './App.css'
 import Counter from "../Counter/Counter";
 import Header from '../Header/Header';
 
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+
 import TodoApp from '../Todo/TodoApp'
-import todoReducer from '../../reducers/todoApp';
+import todoReducer from '../../reducers/Todo/todoApp';
+
+import LambdaApp from '../Lambda/LambdaApp';
+import lambdaReducer from '../../reducers/Lambda/lambdaApp';
 
 class App extends Component {
 
@@ -43,6 +49,10 @@ class App extends Component {
 
   renderContent = () => {
     const todoStore = createStore(todoReducer);
+    const lambdaStore = createStore(
+      lambdaReducer,
+      applyMiddleware(logger, thunk)
+    );
 
     return (
       <Switch>
@@ -55,10 +65,9 @@ class App extends Component {
           </Provider>
         }/>
         <Route path='/lambda' exact render = { () =>
-          <div>
-            <Counter/>
-            <Counter/>
-          </div>
+          <Provider store={lambdaStore}>
+            <LambdaApp />
+          </Provider>
         }/>
         <Route component={Counter}/>
       </Switch>

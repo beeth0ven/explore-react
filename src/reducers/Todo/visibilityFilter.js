@@ -1,4 +1,4 @@
-import { SET_VISIBILITY_FILTER } from '../actions/todos'
+import { SET_VISIBILITY_FILTER } from '../../actions/Todo/todos'
 
 export const SHOW_ALL = 'SHOW_ALL';
 export const SHOW_COMPLETED = 'SHOW_COMPLETED';
