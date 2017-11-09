@@ -41,19 +41,15 @@ export const loginError = (error) => {
   }
 };
 
-const login = (email, password) => (dispatch) => {
-  dispatch(startLogin());
-  return loginService.login(email, password)
-    .subscribe(
-      token => dispatch(loginSuccess()),
-      error => dispatch(loginError(error))
-    )
-};
-
-const shouldLogin = (state) => !state.isExecuting;
+const shouldLogin = (state) => !state.login.isExecuting;
 
 export const loginIfNeeded = (email, password) => (dispatch, getState) => {
     if (shouldLogin(getState())) {
-      dispatch(login(email, password))
+      dispatch(startLogin());
+      loginService.login(email, password)
+        .subscribe(
+          token => dispatch(loginSuccess()),
+          error => dispatch(loginError(error))
+        )
     }
 };

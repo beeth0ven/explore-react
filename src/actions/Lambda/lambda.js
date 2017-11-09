@@ -1,5 +1,4 @@
 import LambdaService from '../../service/lambdaService';
-import { Observable } from 'rx';
 
 const lambdaService = new LambdaService();
 
@@ -26,11 +25,15 @@ export const invokeLambdaError = (error) => {
   }
 };
 
-export const invokeLambda = () => (dispatch, getState) => {
-  dispatch(startInvokeLambda());
-  return lambdaService.updateSSIP()
-    .subscribe(
-      token => dispatch(invokeLambdaSuccess()),
-      error => dispatch(invokeLambdaError(error))
-    )
+const shouldInvokeLambda = (state) => !state.lambda.isExecuting;
+
+export const invokeLambdaIfNeeded = () => (dispatch, getState) => {
+  if (shouldInvokeLambda(getState())) {
+    dispatch(startInvokeLambda());
+    lambdaService.updateSSIP()
+      .subscribe(
+        token => dispatch(invokeLambdaSuccess()),
+        error => dispatch(invokeLambdaError(error))
+      )
+  }
 };

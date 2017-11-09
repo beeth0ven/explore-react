@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Lambda from '../../component/Lambda/Lambda';
-import { invokeLambda } from '../../actions/Lambda/lambda';
+import { invokeLambdaIfNeeded } from '../../actions/Lambda/lambda';
 import {
   INITIAL,
   EXECUTING,
@@ -13,7 +13,7 @@ import {
 const labelText = (lambda) => {
   switch (lambda.taskState) {
     case INITIAL:
-      return 'Update SS Ip Lambda';
+      return 'Update SS IP';
     case EXECUTING:
       return 'Invoking...';
     case SUCCESS:
@@ -31,7 +31,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  onInvokeClick: () => { dispatch(invokeLambda()) }
+  onInvokeClick: () => { dispatch(invokeLambdaIfNeeded()) }
 });
 
 const LambdaContainer = connect(
