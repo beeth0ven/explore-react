@@ -1,19 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { changeEmail, changePassword, loginIfNeeded } from '../../actions/Lambda/lambdas';
+import { changeEmail, changePassword, loginIfNeeded } from '../../actions/Lambda/login';
 import Login from '../../component/Lambda/Login';
 
 const isButtonEnabled = (state) => {
   return state.email.length > 0
     && state.password.length > 0
-    && !state.isLogining
+    && !state.isExecuting
 };
 
 const mapStateToProps = (state) => ({
-  email: state.email,
-  password: state.password,
-  isLogining: state.isLogining,
-  loginDisabled: !isButtonEnabled(state)
+  email: state.login.email,
+  password: state.login.password,
+  isExecuting: state.login.isExecuting,
+  loginDisabled: !isButtonEnabled(state.login)
 });
 
 const mergeProps = (stateProps, dispatchProps, ownProps) => {

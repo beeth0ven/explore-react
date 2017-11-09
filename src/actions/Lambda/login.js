@@ -1,8 +1,6 @@
-import LoginService from '../../service/loginservice';
-import LambdaService from '../../service/lambdaservice';
+import LoginService from '../../service/loginService';
 
 const loginService = new LoginService();
-const lambdaService = new LambdaService();
 
 export const CHANGE_EMAIL = 'CHANGE_EMAIL';
 export const CHANGE_PASSWORD = 'CHANGE_PASSWORD';
@@ -46,14 +44,13 @@ export const loginError = (error) => {
 const login = (email, password) => (dispatch) => {
   dispatch(startLogin());
   return loginService.login(email, password)
-    .flatMapLatest(lambdaService.updateSSIP)
     .subscribe(
       token => dispatch(loginSuccess()),
       error => dispatch(loginError(error))
     )
 };
 
-const shouldLogin = (state) => !state.isLogining;
+const shouldLogin = (state) => !state.isExecuting;
 
 export const loginIfNeeded = (email, password) => (dispatch, getState) => {
     if (shouldLogin(getState())) {

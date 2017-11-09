@@ -1,8 +1,3 @@
-/**
- * Created by Air on 2017/10/13.
- */
-
-import config from './config';
 import { Observable } from 'rx';
 import {
   AuthenticationDetails,
@@ -10,9 +5,27 @@ import {
   CognitoUserPool
 } from 'amazon-cognito-identity-js';
 import AWS, { CognitoIdentityCredentials } from 'aws-sdk';
-AWS.config.update({ region: config.cognito.REGION });
 
-class LoginService {
+class AWSLogin {
+
+  constructor
+  ({
+     region,
+     userPoolId,
+     identityPoolId,
+     clientId
+   }) {
+    this.region = region;
+    this.userPoolId = userPoolId;
+    this.identityPoolId = identityPoolId;
+    this.clientId = clientId;
+    AWS.config.update({ region: region });
+
+    this.defaultCognitoUserPool = new CognitoUserPool({
+      UserPoolId: userPoolId,
+      ClientId: clientId
+    });
+  }
 
   login = (email, password) => {
 
@@ -33,9 +46,9 @@ class LoginService {
   };
 
   refreshCredentials = (userToken) => {
-    const authenticator = `cognito-idp.${config.cognito.REGION}.amazonaws.com/${config.cognito.USER_POOL_ID}`;
+    const authenticator = `cognito-idp.${this.region}.amazonaws.com/${this.userPoolId}`;
     const credentials = new CognitoIdentityCredentials({
-      IdentityPoolId: config.cognito.IDENTITY_POOL_ID,
+      IdentityPoolId: this.identityPoolId,
       Logins: { [authenticator]: userToken }
     });
     AWS.config.credentials = credentials;
@@ -56,11 +69,6 @@ class LoginService {
 
     user.authenticateUser(authDetails, callback);
   };
-
-  defaultCognitoUserPool = new CognitoUserPool({
-    UserPoolId: config.cognito.USER_POOL_ID,
-    ClientId: config.cognito.APP_CLIENT_ID
-  });
 }
 
-export default LoginService;
+export default AWSLogin;

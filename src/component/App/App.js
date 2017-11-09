@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css'
 import Counter from "../Counter/Counter";
-import Header from '../Header/Header';
+import Header from './Header';
 
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
@@ -10,10 +10,9 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
 import TodoApp from '../Todo/TodoApp'
-import todoReducer from '../../reducers/Todo/todoApp';
-
 import LambdaApp from '../Lambda/LambdaApp';
-import lambdaReducer from '../../reducers/Lambda/lambdaApp';
+
+import beeth0venApp from '../../reducers/index';
 
 class App extends Component {
 
@@ -21,7 +20,7 @@ class App extends Component {
     super();
 
     this.state = {
-      isLogin: false
+      isSuccess: false
     }
   }
 
@@ -48,29 +47,27 @@ class App extends Component {
   }
 
   renderContent = () => {
-    const todoStore = createStore(todoReducer);
-    const lambdaStore = createStore(
-      lambdaReducer,
+    const store = createStore(
+      beeth0venApp,
       applyMiddleware(logger, thunk)
     );
 
     return (
-      <Switch>
-        <Route path='/' exact render = { () =>
-          <Counter/>
-        }/>
-        <Route path={'/todos'} exact render = { () =>
-          <Provider store={todoStore}>
+      <Provider store={store}>
+        <Switch>
+          <Route path='/' exact render = { () =>
+            <Counter/>
+          }/>
+          <Route path={'/todos'} exact render = { () =>
             <TodoApp/>
-          </Provider>
-        }/>
-        <Route path='/lambda' exact render = { () =>
-          <Provider store={lambdaStore}>
+          }/>
+          <Route path='/lambda' exact render = { () =>
             <LambdaApp />
-          </Provider>
-        }/>
-        <Route component={Counter}/>
-      </Switch>
+          }/>
+          <Route component={Counter}/>
+        </Switch>
+      </Provider>
+
     );
   }
 }

@@ -4,14 +4,14 @@ import {
   START_LOGIN,
   LOGIN_SUCCESS,
   LOGIN_FAILED
-} from '../../actions/Lambda/lambdas';
+} from '../../actions/Lambda/login';
 
-const lambdaReducer = (state = {
+const login = (state = {
   email: "",
   password: "",
-  isLogining: false,
-  isLogin: false,
-  loginError: undefined
+  isExecuting: false,
+  isSuccess: false,
+  error: undefined
 }, action) => {
   switch (action.type) {
     case CHANGE_EMAIL:
@@ -19,23 +19,23 @@ const lambdaReducer = (state = {
     case CHANGE_PASSWORD:
       return {...state, password: action.password};
     case START_LOGIN:
-      return {...state, isLogining: true};
+      return {...state, isExecuting: true};
     case LOGIN_SUCCESS:
       return {
         ...state,
-        isLogining: false,
-        isLogin: true
+        isExecuting: false,
+        isSuccess: true
       };
     case LOGIN_FAILED:
       return {
         ...state,
-        isLogining: false,
-        isLogin: false,
-        loginError: action.error
+        isExecuting: false,
+        isSuccess: false,
+        error: action.error
       };
     default:
       return state;
   }
 };
 
-export default lambdaReducer;
+export default login;

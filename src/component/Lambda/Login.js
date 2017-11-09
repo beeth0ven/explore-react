@@ -4,14 +4,13 @@ import Password from './Password';
 import LoginButton from './LoginButton';
 import '../../index.css'
 
-
 const Login =
   ({
      email,
      password,
      onEmailChange,
      onPasswordChange,
-     isLogining,
+     isExecuting,
      loginDisabled,
      onLoginClick
    }) =>
@@ -21,9 +20,10 @@ const Login =
         <div className='login'>
           <Email email={email} onChange={onEmailChange}/>
           <Password password={password} onChange={onPasswordChange}/>
-          <LoginButton isLogining={isLogining} disabled={loginDisabled} onClick={onLoginClick}/>
+          <LoginButton isExecuting={isExecuting} disabled={loginDisabled} onClick={onLoginClick}/>
         </div>
       </div>
     );
 
 export default Login;
+
