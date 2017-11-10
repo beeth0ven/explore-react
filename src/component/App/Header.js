@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, PageHeader } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
@@ -17,6 +17,12 @@ class Header extends Component {
           <IndexLinkContainer to='/'>
             <NavItem>Home</NavItem>
           </IndexLinkContainer>
+          <LinkContainer to='/html'>
+            <NavItem>HTML</NavItem>
+          </LinkContainer>
+          <LinkContainer to='/counter'>
+            <NavItem>Counter</NavItem>
+          </LinkContainer>
           <LinkContainer to='/todos'>
             <NavItem>Todos</NavItem>
           </LinkContainer>
