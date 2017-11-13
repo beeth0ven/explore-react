@@ -1,6 +1,6 @@
 import React from 'react';
 import { Panel, PanelGroup } from 'react-bootstrap'
-import { chapters } from './Chapter/Chapters';
+import { chapters } from './chapter/chapters';
 
 const Cell = (example, index) => (
   <Panel header={example.header} key={index} bsStyle='info'>

@@ -128,6 +128,6 @@ const examples = [
 
 export const htmlPhraseTags = {
   header: 'HTML - Phrase Tags',
-  examples: examples
+  examples
 };
 

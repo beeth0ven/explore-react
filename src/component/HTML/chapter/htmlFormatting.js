@@ -111,6 +111,6 @@ const examples = [
 
 export const htmlFormatting = {
   header: 'HTML - Formatting',
-  examples: examples
+  examples
 };
 

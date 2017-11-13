@@ -23,6 +23,6 @@ const examples = [
 
 export const htmlAttributes = {
   header: 'HTML - Attributes',
-  examples: examples
+  examples
 };
 

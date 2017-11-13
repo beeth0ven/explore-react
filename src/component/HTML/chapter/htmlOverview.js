@@ -14,6 +14,6 @@ const examples = [
 
 export const htmlOverview = {
   header: 'HTML - Overview',
-  examples: examples
+  examples
 };
 

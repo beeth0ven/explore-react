@@ -14,6 +14,6 @@ const examples = [
 
 export const htmlElements ={
   header: 'HTML - Elements',
-  examples: examples
+  examples
 };
 

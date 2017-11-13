@@ -80,6 +80,6 @@ const examples = [
 
 export const htmlBasicTags = {
   header: 'HTML - Basic Tags',
-  examples: examples
+  examples
 };
 

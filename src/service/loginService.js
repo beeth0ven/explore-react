@@ -3,7 +3,7 @@
  */
 
 import config from './config';
-import AWSLogin from '../framework/AWS/awslogin';
+import AWSLogin from '../framework/AWS/AWSLogin';
 
 class LoginService {
 
