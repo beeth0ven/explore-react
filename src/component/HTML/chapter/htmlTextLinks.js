@@ -42,20 +42,20 @@ const examples = [
       </div>
     )
   },
-  {
-    header: 'Hyperlink Base Example',
-    render: (
-      <div>
-        <p>Click following link</p>
-        <base href='https://beeth0ven.github.io'/>
-        <a
-          href='/RxSwift-Chinese-Documentation/'
-          target='_blank'>
-          RxSwift Chinese Documentation
-        </a>
-      </div>
-    )
-  },
+  // {
+  //   header: 'Hyperlink Base Example',
+  //   render: (
+  //     <div>
+  //       <p>Click following link</p>
+  //       <base href='https://beeth0ven.github.io'/>
+  //       <a
+  //         href='/RxSwift-Chinese-Documentation/'
+  //         target='_blank'>
+  //         RxSwift Chinese Documentation
+  //       </a>
+  //     </div>
+  //   )
+  // },
   {
     header: 'Hyperlink Download Links Example',
     render: (

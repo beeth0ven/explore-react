@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a37c8b-0cd5-4f41-b958-9efbddd3f089" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlImages.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlLists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlMetaTags.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlTables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlTextLinks.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/component/HTML/Chapter/Chapters.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/chapters.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/component/HTML/Chapter/HTMLAttributes.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlAttributes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/component/HTML/Chapter/HTMLBasicTags.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlBasicTags.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/component/HTML/Chapter/HTMLElements.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlElements.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/component/HTML/Chapter/HTMLFormatting.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlFormatting.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/component/HTML/Chapter/HTMLOverview.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlOverview.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/component/HTML/Chapter/HTMLPhraseTags.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlPhraseTags.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/framework/AWS/awslogin.js" afterPath="$PROJECT_DIR$/src/framework/AWS/AWSLogin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Air.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Air.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htemEmailLinks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlImageLinks.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/HTML/HTMLApp.js" afterPath="$PROJECT_DIR$/src/component/HTML/HTMLApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/loginService.js" afterPath="$PROJECT_DIR$/src/service/loginService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/App/Header.js" afterPath="$PROJECT_DIR$/src/component/App/Header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/HTML/chapter/chapters.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/chapters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/HTML/chapter/htmlTextLinks.js" afterPath="$PROJECT_DIR$/src/component/HTML/chapter/htmlTextLinks.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +25,8 @@
       <file leaf-file-name="chapters.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/HTML/chapter/chapters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="420">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -46,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlTextLinks.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/component/HTML/chapter/htmlTextLinks.js">
+      <file leaf-file-name="htemEmailLinks.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/HTML/chapter/htemEmailLinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -77,8 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/reducers/Lambda/lambdaAppReducer.js" />
-        <option value="$PROJECT_DIR$/src/reducers/Lambda/lambdaReducer.js" />
         <option value="$PROJECT_DIR$/src/reducers/Lambda/loginReducer.js" />
         <option value="$PROJECT_DIR$/src/component/Lambda/Lambda.js" />
         <option value="$PROJECT_DIR$/src/reducers/Lambda/taskState.js" />
@@ -98,9 +84,7 @@
         <option value="$PROJECT_DIR$/src/actions/Lambda/lambda.js" />
         <option value="$PROJECT_DIR$/src/containers/Lambda/LambdaContainer.js" />
         <option value="$PROJECT_DIR$/src/actions/Lambda/login.js" />
-        <option value="$PROJECT_DIR$/src/component/App/Header.js" />
         <option value="$PROJECT_DIR$/src/component/Counter/CounterApp.js" />
-        <option value="$PROJECT_DIR$/src/component/App/App.js" />
         <option value="$PROJECT_DIR$/src/component/HTML/Example.js" />
         <option value="$PROJECT_DIR$/src/component/HTML/Examples.js" />
         <option value="$PROJECT_DIR$/src/component/HTML/Chaper/Example.js" />
@@ -126,8 +110,12 @@
         <option value="$PROJECT_DIR$/src/component/HTML/chapter/htmlTables.js" />
         <option value="$PROJECT_DIR$/src/component/HTML/chapter/htmmlLists.js" />
         <option value="$PROJECT_DIR$/src/component/HTML/chapter/htmlLists.js" />
-        <option value="$PROJECT_DIR$/src/component/HTML/chapter/chapters.js" />
+        <option value="$PROJECT_DIR$/src/component/App/App.js" />
+        <option value="$PROJECT_DIR$/src/component/App/Header.js" />
+        <option value="$PROJECT_DIR$/src/component/HTML/chapter/htmlImageLinks.js" />
         <option value="$PROJECT_DIR$/src/component/HTML/chapter/htmlTextLinks.js" />
+        <option value="$PROJECT_DIR$/src/component/HTML/chapter/chapters.js" />
+        <option value="$PROJECT_DIR$/src/component/HTML/chapter/htemEmailLinks.js" />
       </list>
     </option>
   </component>
@@ -182,12 +170,6 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="explore-react" type="cbb8eebc:String" user="explore-react" />
               <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="explore-react" type="cbb8eebc:String" user="explore-react" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="assets" type="cbb8eebc:String" user="assets" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
@@ -279,7 +261,7 @@
       <workItem from="1510104411010" duration="33876000" />
       <workItem from="1510215953303" duration="9920000" />
       <workItem from="1510295172614" duration="9606000" />
-      <workItem from="1510535424401" duration="14459000" />
+      <workItem from="1510535424401" duration="18032000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1509585107272</created>
@@ -323,11 +305,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510305957567</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add HTML Basic Chapters">
+      <created>1510560163748</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1510560163748</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144417000" />
+    <option name="totallyTimeSpent" value="147990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="858" height="1080" extended-state="6" />
@@ -368,7 +357,8 @@
     <MESSAGE value="Combine LambdaApp and TodoApp" />
     <MESSAGE value="Add counter" />
     <MESSAGE value="Add HTML Demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add HTML Demo" />
+    <MESSAGE value="Add HTML Basic Chapters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add HTML Basic Chapters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -377,20 +367,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/service/lambdaService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/amazon-cognito-identity-js/es/CognitoUserPool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -544,6 +520,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -571,13 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/App/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -643,16 +613,6 @@
         <state relative-caret-position="240">
           <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/App/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-186">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,20 +702,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/HTML/chapter/chapters.js">
+    <entry file="file://$PROJECT_DIR$/src/component/App/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="392">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="26" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/App/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/HTML/chapter/htmlTextLinks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        <state relative-caret-position="179">
+          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/HTML/chapter/htmlImageLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/HTML/chapter/chapters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/HTML/chapter/htemEmailLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>

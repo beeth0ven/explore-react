@@ -9,7 +9,9 @@ import { htmlMetaTags } from './htmlMetaTags';
 import { htmlImages } from './htmlImages';
 import { htmlTables } from './htmlTables';
 import { htmlLists } from './htmlLists';
-import { htmlTextLinks } from './htmlTextLinks'
+import { htmlTextLinks } from './htmlTextLinks';
+import { htmlImageLinks } from './htmlImageLinks';
+import { htmlEmailLinks } from './htemEmailLinks';
 
 export const chapters = [
   htmlOverview,
@@ -22,5 +24,7 @@ export const chapters = [
   htmlImages,
   htmlTables,
   htmlLists,
-  htmlTextLinks
+  htmlTextLinks,
+  htmlImageLinks,
+  htmlEmailLinks
 ];
