@@ -11,7 +11,10 @@ import { htmlTables } from './htmlTables';
 import { htmlLists } from './htmlLists';
 import { htmlTextLinks } from './htmlTextLinks';
 import { htmlImageLinks } from './htmlImageLinks';
-import { htmlEmailLinks } from './htemEmailLinks';
+import { htmlEmailLinks } from './htmlEmailLinks';
+import { htmlBlocks } from './htmlBlocks';
+import { htmlFonts } from './htmlFonts';
+import { htmlForms } from './htmlForms';
 
 export const chapters = [
   htmlOverview,
@@ -26,5 +29,8 @@ export const chapters = [
   htmlLists,
   htmlTextLinks,
   htmlImageLinks,
-  htmlEmailLinks
+  htmlEmailLinks,
+  htmlBlocks,
+  htmlFonts,
+  htmlForms
 ];
