@@ -2,9 +2,10 @@ import React from 'react';
 import { Panel, PanelGroup } from 'react-bootstrap'
 import { chapters } from './chapter/chapters';
 import Code from './Code';
+import dedent from 'dedent-js';
 
 const showCodeIfNeeded = (code) => code
-  ? <Code code={code}/>
+  ? <Code code={dedent(code)}/>
   : <div/>;
 
 const Cell = (example, index) => {

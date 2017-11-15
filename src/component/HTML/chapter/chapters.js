@@ -15,6 +15,9 @@ import { htmlEmailLinks } from './htmlEmailLinks';
 import { htmlBlocks } from './htmlBlocks';
 import { htmlFonts } from './htmlFonts';
 import { htmlForms } from './htmlForms';
+import { htmlMarquees } from './htmlMarquees';
+import { htmlStyleSheet } from './htmlStyleSheet';
+import { htmlLayouts } from './htmlLayouts';
 
 export const chapters = [
   htmlOverview,
@@ -32,5 +35,8 @@ export const chapters = [
   htmlEmailLinks,
   htmlBlocks,
   htmlFonts,
-  htmlForms
+  htmlForms,
+  htmlMarquees,
+  htmlStyleSheet,
+  htmlLayouts
 ];

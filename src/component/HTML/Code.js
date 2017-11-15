@@ -17,7 +17,11 @@ export default class Code extends Component {
   render() {
     return (
       <div>
-        <Button bsStyle="success" onClick={this.onToggleShowCode}>
+        <Button
+          style={{marginTop: '10px', marginBottom: '10px'}}
+          bsStyle="success"
+          onClick={this.onToggleShowCode}
+        >
           { !this.state.isShow ? 'Show Code' : 'Hide Code' }
         </Button>
         <Panel collapsible expanded={this.state.isShow}>
