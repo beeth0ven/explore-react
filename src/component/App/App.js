@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css'
 import HTMLApp from '../HTML/HTMLApp';
 import CSSApp from '../CSS/CSSApp';
-import TodoApp from '../Todo/TodoApp'
-import LambdaApp from '../Lambda/LambdaApp';
 import CounterApp from "../Counter/CounterApp";
+import TodoApp from '../Todo/TodoApp'
+import GameApp from '../Game/GameApp';
+import LambdaApp from '../Lambda/LambdaApp';
 import Header from './Header';
 
 import { createStore, applyMiddleware } from 'redux'
@@ -40,6 +41,9 @@ const App = () => {
         }/>
         <Route path={'/todos'} exact render = { () =>
           <TodoApp/>
+        }/>
+        <Route path='/game' exact render = { () =>
+          <GameApp/>
         }/>
         <Route path='/lambda' exact render = { () =>
           <LambdaApp/>

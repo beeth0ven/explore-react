@@ -29,6 +29,9 @@ class Header extends Component {
           <LinkContainer to='/todos'>
             <NavItem>Todos</NavItem>
           </LinkContainer>
+          <LinkContainer to='/game'>
+            <NavItem>Game</NavItem>
+          </LinkContainer>
           <LinkContainer to='/lambda'>
             <NavItem>Lambda</NavItem>
           </LinkContainer>
