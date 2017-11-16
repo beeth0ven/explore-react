@@ -1,0 +1,28 @@
+.cssBackgroundBody {
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2016-02/8/13/enhanced/webdr15/original-9577-1454955166-3.jpg?downsize=715:*&output-format=auto&output-quality=auto");
+  height: 200px;
+}
+.cssBackgroundRepeatImageBody {
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2016-02/8/13/enhanced/webdr15/original-9577-1454955166-3.jpg?downsize=715:*&output-format=auto&output-quality=auto");
+  background-repeat: repeat;
+  height: 200px;
+}
+.cssBackgroundImagePosintionBody {
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2016-02/8/13/enhanced/webdr15/original-9577-1454955166-3.jpg?downsize=715:*&output-format=auto&output-quality=auto");
+  background-position: 100px 200px;
+  height: 200px;
+}
+.cssBackgroundAttachment {
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2016-02/8/13/enhanced/webdr15/original-9577-1454955166-3.jpg?downsize=715:*&output-format=auto&output-quality=auto");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  height: 300px;
+}
+.cssBackgroundAttachmentScroll {
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2016-02/8/13/enhanced/webdr15/original-9577-1454955166-3.jpg?downsize=715:*&output-format=auto&output-quality=auto");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  overflow-y: scroll;
+  height: 300px;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css'
 import HTMLApp from '../HTML/HTMLApp';
+import CSSApp from '../CSS/CSSApp';
 import TodoApp from '../Todo/TodoApp'
 import LambdaApp from '../Lambda/LambdaApp';
 import CounterApp from "../Counter/CounterApp";
@@ -30,6 +31,9 @@ const App = () => {
         }/>
         <Route path='/html' exact render = { () =>
           <HTMLApp/>
+        }/>
+        <Route path='/css' exact render = { () =>
+          <CSSApp/>
         }/>
         <Route path='/counter' exact render = { () =>
           <CounterApp/>

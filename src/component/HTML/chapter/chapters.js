@@ -1,4 +1,3 @@
-import React from 'react';
 import { htmlOverview } from './htmlOverview';
 import { htmlBasicTags } from './htmlBasicTags';
 import { htmlElements } from './htmlElements';

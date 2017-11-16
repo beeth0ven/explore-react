@@ -20,6 +20,9 @@ class Header extends Component {
           <LinkContainer to='/html'>
             <NavItem>HTML</NavItem>
           </LinkContainer>
+          <LinkContainer to='/css'>
+            <NavItem>CSS</NavItem>
+          </LinkContainer>
           <LinkContainer to='/counter'>
             <NavItem>Counter</NavItem>
           </LinkContainer>
