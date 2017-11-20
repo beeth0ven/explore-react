@@ -107,8 +107,8 @@ class GameApp extends Component {
     const moves = history.map((state, index) => {
       const label = index === 0 ? 'Go to game start' : 'Go to move #' + index;
       return (
-        <li>
-          <button key={index} onClick={() => this.jumpTo(index)}>{label}</button>
+        <li key={index}>
+          <button onClick={() => this.jumpTo(index)}>{label}</button>
         </li>
       )
     });
